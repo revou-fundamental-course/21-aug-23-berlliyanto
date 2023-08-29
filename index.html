@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>My Website</title>
 </head>
+
 <body>
     <header>
         <div class="logo"></div>
-        <nav class="navigasi"></nav>
+        <nav class="navigasi">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Our Profile</a></li>
+                <li class="nav-item"><a href="">Achievment</a></li>
+                <li class="nav-item"><a href="">Message Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="landing">
+            <h1>Hi <span id="name">name</span> Welcome to My Website</h1>
+            <h4>Ini Merupakan Website Pertama</h4>
+        </section>
+        <section class="fasilitas">
+            <h1>Our Facilitation</h1>
+            <div class="facil-wrap">
+                <div class="facil-item">
+                    <h2>Professional Teacher</h2>
+                </div>
+                <div class="facil-item">
+                    <h2>Sport Field</h2>
+                </div>
+                <div class="facil-item">
+                    <h2>Classroom</h2>
+                </div>
+            </div>
+        </section>
+        <section class="message-us">
+            <h1>Message Us</h1>
+            <form action="" class="form-validation">
+                <h6 class="nama">Nama</h6>
+                <span class="colon">:</span>
+                <input type="text" class="input-nama">
+                <h6 class="nama">Tanggal Lahir</h6>
+                <span class="colon">:</span>
+                <input type="date" class="input-tgl">
+                <h6 class="nama">Jenis Kelamin</h6>
+                <span class="colon">:</span>
+                <span class="radio-kelamin">
+                    <input type="radio" class="input-kelamin" id="input-kelamin"> <span>Laki - Laki</span>
+                    <input type="radio" class="input-kelamin" id="input-kelamin"> <span>Perempuan</span>
+                </span>
+                <h6 class="nama">Pesan</h6>
+                <span class="colon">:</span>
+                <input type="text" class="input-pesan">
+                <button class="btn-submit">
+                    Submit
+                </button>
+            </form>
+            <div class="form-value">
+                <p><strong>Current Time : </strong><span id="tglSekarang-value"></span></p>
+                <br><br>
+                <p><strong> Nama : </strong><span id="nama-value"></span></p>
+                <p><strong>Tanggal Lahir : </strong><span id="tglLahir-value"></span></p>
+                <p><strong>Jenis Kelamin : </strong><span id="kelamin-value"></span></p>
+                <p><strong>Pesan : </strong><span id="pesan-value"></span></p>
+            </div>
+        </section>
+    </main>
     <footer></footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>

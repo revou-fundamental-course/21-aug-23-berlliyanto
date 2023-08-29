@@ -43,3 +43,223 @@ table {
 }
 
 /* --------------My Style----------------- */
+
+:root{
+    --warna-1: #0E21A0;
+    --warna-2: #4D2DB7;
+    --warna-3: #9D44C0;
+    --warna-4: #EC53B0;
+}
+
+body{
+    background: linear-gradient(to right,var(--warna-1), var(--warna-2));
+    font: 18px/24px 'sans-serif','arial';
+    overflow-x: hidden;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, var(--warna-2), var(--warna-3));
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.navigasi{
+    height: auto;
+    width: auto;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item a{
+    position: relative;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-item a::before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--warna-1);
+    transition: 0.3s;
+}
+
+.nav-item a:hover::before{
+    width: 100%;
+}
+
+.nav-item a:hover{
+    color: var(--warna-1);
+}
+
+main{
+    box-sizing: border-box;
+    padding: 60px 0 20px 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.landing h1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.landing h4{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+
+.fasilitas{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 80px;
+}
+
+.fasilitas h1{
+    font-size: 26px;
+    margin: 30px 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2x 3px rgba(0,0,0,0.3);
+}
+
+.fasilitas .facil-wrap{
+    margin-left: 80px;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.facil-wrap .facil-item{
+    position: relative;;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: red;
+    margin-right: 50px;
+}
+
+.facil-item h2{
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.message-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    'header header' 
+    'form-area form-value';
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-left: 80px;
+}
+
+.message-us h1{
+    grid-area: header;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2x 3px rgba(0,0,0,0.3);
+}
+
+.message-us .form-validation{
+    grid-area: form-area;
+    display: grid;
+    grid-template-columns: 130px 5px 350px;
+    grid-template-rows: 30px 30px 30px 120px 30px;
+    grid-template-areas: 
+    'nama colon input-name' 
+    'tanggal colon input-tgl' 
+    'jenis colon input-kelamin' 
+    'pesan colon input-pesan' 
+    'button button button';
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.message-us .form-validation h6{
+    color: white;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.message-us .form-validation span{
+    color: white;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.message-us .form-validation .btn-submit{
+    grid-area: button;
+    justify-self: center;
+    width: 100%;
+    height: 30px;
+
+}
+
+.message-us .form-value{
+    grid-area: form-value;
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 30px;
+    border: 2px solid rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
