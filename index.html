@@ -13,53 +13,90 @@
         <div class="logo"></div>
         <nav class="navigasi">
             <ul class="nav-menu">
-                <li class="nav-item"><a href="">Home</a></li>
-                <li class="nav-item"><a href="">Our Profile</a></li>
-                <li class="nav-item"><a href="">Achievment</a></li>
-                <li class="nav-item"><a href="">Message Us</a></li>
+                <li class="nav-item"><a href="#landing">Home</a></li>
+                <li class="nav-item"><a href="#fasilitas">Our Facilitation</a></li>
+                <li class="nav-item"><a href="#profile">Our Profile</a></li>
+                <li class="nav-item"><a href="#message-us">Message Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="landing">
-            <h1>Hi <span id="name">name</span> Welcome to My Website</h1>
-            <h4>Ini Merupakan Website Pertama</h4>
+        <section class="landing" id="landing">
+            <h1>Hi <span id="name">...</span> Welcome to My Website</h1>
+            <h4>Ini Merupakan Website Sekolah Ku</h4>
         </section>
-        <section class="fasilitas">
+        <section class="fasilitas" id="fasilitas">
             <h1>Our Facilitation</h1>
             <div class="facil-wrap">
                 <div class="facil-item">
                     <h2>Professional Teacher</h2>
                 </div>
                 <div class="facil-item">
-                    <h2>Sport Field</h2>
+                    <h2>Swimming Pool</h2>
                 </div>
                 <div class="facil-item">
                     <h2>Classroom</h2>
                 </div>
+                <div class="facil-item">
+                    <h2>Sport Field</h2>
+                </div>
             </div>
         </section>
-        <section class="message-us">
+        <section class="profile" id="profile">
+            <h1>Our Profile</h1>
+            <br>
+            <p>Welcome to <span id="sekolahKu">SekolahKu</span> We are a dedicated educational institution committed to
+                providing quality
+                education and fostering a nurturing learning environment for our students. With a rich history and a
+                strong focus on academic excellence, [School Name] stands as a beacon of knowledge in the community.</p>
+            <br>
+            <h2>Our Mission : </h2>
+            <p>At <span id="sekolahKu">SekolahKu</span>, our mission is to empower students with the skills, knowledge,
+                and values they need to
+                succeed in a rapidly changing world. We strive to inspire a love for learning and personal growth while
+                fostering a sense of responsibility and empathy towards others.</p>
+            <br>
+            <h2>Our Vision : </h2>
+            <p>Our vision is to create a vibrant educational community where every student is encouraged to explore
+                their potential, embrace creativity, and become lifelong learners. We envision graduates of <span
+                    id="sekolahKu">SekolahKu</span> as well-rounded individuals who are prepared to contribute
+                positively to society.</p>
+            <br>
+            <h2>Core Values :</h2>
+            <ul>
+                <li>Academic Excellence: We are dedicated to maintaining high standards of education and promoting a
+                    passion for knowledge.</li>
+                <li>Integrity: We uphold honesty, respect, and ethical behavior in all aspects of our school community.
+                </li>
+                <li>Inclusivity: We celebrate diversity and create an inclusive environment where everyone is valued and
+                    respected.</li>
+                <li>Collaboration: We believe in the power of teamwork and collaboration among students, teachers,
+                    parents, and the community.</li>
+                <li>Growth: We encourage personal and academic growth, ensuring that each student reaches their fullest
+                    potential.</li>
+            </ul>
+        </section>
+        <section class="message-us" id="message-us">
             <h1>Message Us</h1>
             <form action="" class="form-validation">
                 <h6 class="nama">Nama</h6>
                 <span class="colon">:</span>
-                <input type="text" class="input-nama">
+                <input type="text" class="input-nama" id="input-nama">
                 <h6 class="nama">Tanggal Lahir</h6>
                 <span class="colon">:</span>
-                <input type="date" class="input-tgl">
+                <input type="date" class="input-tgl" id="input-tgl">
                 <h6 class="nama">Jenis Kelamin</h6>
                 <span class="colon">:</span>
                 <span class="radio-kelamin">
-                    <input type="radio" class="input-kelamin" id="input-kelamin"> <span>Laki - Laki</span>
-                    <input type="radio" class="input-kelamin" id="input-kelamin"> <span>Perempuan</span>
+                    <input type="radio" class="input-kelamin" id="input-kelamin" name="jenis-kelamin"
+                        value="Laki - Laki"> <span>Laki - Laki</span>
+                    <input type="radio" class="input-kelamin" id="input-kelamin" name="jenis-kelamin" value="Perempuan">
+                    <span>Perempuan</span>
                 </span>
                 <h6 class="nama">Pesan</h6>
                 <span class="colon">:</span>
-                <input type="text" class="input-pesan">
-                <button class="btn-submit">
-                    Submit
-                </button>
+                <input type="text" class="input-pesan" id="input-pesan">
+                <input type="button" class="btn-submit" id="btn-submit" value="Submit" onclick="submitMessage()">
             </form>
             <div class="form-value">
                 <p><strong>Current Time : </strong><span id="tglSekarang-value"></span></p>
@@ -71,7 +108,9 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <h1>SekolahKu</h1>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
