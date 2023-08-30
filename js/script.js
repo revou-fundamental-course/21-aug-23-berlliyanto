@@ -1,6 +1,11 @@
 // Submit Message Us
 
-a
+let nama = prompt('Isi Nama Anda', '');
+while (nama == '') {
+    nama = prompt('Anda harus Isi Nama Anda', '');
+}
+let namaKamu = document.getElementById('name');
+namaKamu.innerText = nama;
 
 function submitMessage() {
     let inputName = document.getElementById('input-nama').value;
