@@ -5,6 +5,8 @@ while (nama == '') {
     nama = prompt('Anda harus Isi Nama Anda', '');
 }
 let namaKamu = document.getElementById('name');
+namaKamu.style.color = 'purple';
+namaKamu.style.fontWeight = 'bold';
 namaKamu.innerText = nama;
 
 function submitMessage() {

@@ -265,14 +265,13 @@ main {
     margin-left: 80px;
     height: 250px;
     width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
 }
 
 .facil-wrap .facil-item {
     position: relative;
-    ;
     height: 200px;
     width: 200px;
     border-radius: 100px;
